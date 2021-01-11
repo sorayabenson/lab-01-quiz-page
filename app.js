@@ -1,4 +1,6 @@
 // import functions and grab DOM elements
+import { countsAsAYes } from './counts-as-a-yes.js'
+
 const quizButton = document.getElementById('take-the-quiz');
 const quizResults = document.getElementById('secret-results');
 
