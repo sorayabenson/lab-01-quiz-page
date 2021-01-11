@@ -17,7 +17,7 @@ test('If answer does not begin with a y the test returns false', (expect) => {
 
     const expected = false;
 
-    const actual = !countsAsAYes('yikes');
+    const actual = countsAsAYes('nice');
 
     expect.equal(actual, expected);
 });
