@@ -11,7 +11,11 @@ quizButton.addEventListener('click', () => {
 
     if (!areYouReady) return;
 
-    console.log('sweet birthday baby!');
+    const firstName = prompt('Your first name, please.');
+
+    const lastName = prompt('and your last name, thank you.')
+
+    console.log(firstName, lastName);
 
 })
 
