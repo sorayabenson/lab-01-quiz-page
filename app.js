@@ -25,6 +25,9 @@ quizButton.addEventListener('click', () => {
 
     if (countsAsAYes(secondQuestion)) correctAnswers++;
 
+    const thirdQuestion = prompt('Can you use a fork pull a print from the block?');
+
+    if (!countsAsAYes(thirdQuestion)) correctAnswers++;
 
     console.log('woohoo!');
 
