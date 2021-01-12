@@ -4,6 +4,8 @@ import { countsAsAYes } from './counts-as-a-yes.js'
 const quizButton = document.getElementById('take-the-quiz');
 const quizResults = document.getElementById('secret-results');
 
+let correctAnswers = 0;
+
 // initialize state
 quizButton.addEventListener('click', () => {
 
@@ -13,9 +15,13 @@ quizButton.addEventListener('click', () => {
 
     const firstName = prompt('Your first name, please.');
 
-    const lastName = prompt('and your last name, thank you.')
+    const lastName = prompt('and your last name, thank you.');
 
-    console.log(firstName, lastName);
+    const firstQuestion = prompt('While carving do you keep your free hand behind the tool?');
+
+    if (countsAsAYes(firstQuestion)) correctAnswers++;
+
+    console.log('woohoo!');
 
 })
 
