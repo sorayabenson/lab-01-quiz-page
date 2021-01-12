@@ -29,6 +29,8 @@ quizButton.addEventListener('click', () => {
 
     if (!countsAsAYes(thirdQuestion)) correctAnswers++;
 
+    const quizComplete = alert('Quiz complete! Check below to see how you scored!');
+
     console.log('woohoo!');
 
 })
