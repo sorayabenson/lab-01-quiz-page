@@ -16,6 +16,17 @@ body, html {
     
 }
 
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.etsystatic.com/isbl/20bb7e/43885398/isbl_3360x840.43885398_mh01dehs.jpg?version=0);
+    background-position: center;
+    background-size: cover;
+}
+
 main {
     width: 75%;
     height: auto;
@@ -32,7 +43,7 @@ section.intro-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin: 40px;
 }
 
 section.intro {
@@ -82,6 +93,7 @@ h1 {
     font-family: 'Monoton', cursive;
     font-weight: 300;
     font-size: 5rem;
+    text-shadow: 2px 2px white;
 }
 
 h2 {
