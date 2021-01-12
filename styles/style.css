@@ -1,1 +1,117 @@
+* {
+    box-sizing: border-box;
+}
 
+body, html {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bitter', serif;
+    font-size: 16px;
+    
+}
+
+main {
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.intro-container {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+section.intro {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 500px;
+    height: auto;
+    margin: 15px;
+    border-radius: 3px;
+}
+
+section.article-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    
+}
+
+section.topic {
+    width: 100%;
+    height: auto;
+    padding: 15px 40px 15px 40px;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+section.ink {
+    background-color: black;
+    color: #1be5ff;
+}
+
+section.review {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    font-weight: 300;
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: 'Monoton', cursive;
+    font-weight: 300;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background: black;
+    color:#1be5ff;
+    border: 3px black solid;
+    border-radius: 3px;
+    font-family: 'Bitter', serif;
+    font-size: 1rem;
+    height: 35px;
+    width: auto;
+    transition-duration: .5s;
+    margin: 25px;
+}
+
+button:hover {
+    background: #1be5ff;
+    color: black;
+    border: 3px black solid;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+}
