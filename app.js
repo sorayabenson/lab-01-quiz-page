@@ -21,6 +21,11 @@ quizButton.addEventListener('click', () => {
 
     if (countsAsAYes(firstQuestion)) correctAnswers++;
 
+    const secondQuestion = prompt('Should the rolled out ink texture be like an orange peel?');
+
+    if (countsAsAYes(secondQuestion)) correctAnswers++;
+
+
     console.log('woohoo!');
 
 })
