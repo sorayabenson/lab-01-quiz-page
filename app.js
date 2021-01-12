@@ -1,4 +1,3 @@
-// import functions and grab DOM elements
 import { countsAsAYes } from './counts-as-a-yes.js'
 
 const quizButton = document.getElementById('take-the-quiz');
@@ -6,7 +5,6 @@ const quizResults = document.getElementById('secret-results');
 
 let correctAnswers = 0;
 
-// initialize state
 quizButton.addEventListener('click', () => {
 
     const areYouReady = confirm('Are you ready for the quiz?');
@@ -29,10 +27,10 @@ quizButton.addEventListener('click', () => {
 
     if (!countsAsAYes(thirdQuestion)) correctAnswers++;
 
-    const quizComplete = alert('Quiz complete! Check below to see how you scored!');
+    alert('Quiz complete! Check below to see how you scored!');
 
-    console.log('woohoo!');
+    const quizResultMessage = `Hey ${firstName} ${lastName}, you answered ${correctAnswers}/3 questions correctly!`;
+
+    quizResults.textContent = quizResultMessage;
 
 })
-
-// set event listeners to update state and DOM
